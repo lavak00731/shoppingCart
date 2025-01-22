@@ -20,7 +20,7 @@ const templaterunner = (prod, i) => {
             if(i >= 4)  {
                 tempLi.classList.add('hidden', 'md:block')
             }
-            
+            tempLi.classList.add('lg:flex-shrink-0', 'lg:basis-44')
             if (tempLi) {
                 target?.appendChild(tempLi);
             }
