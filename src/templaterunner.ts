@@ -1,6 +1,5 @@
 import starsCreator from "./starsCreator";
 const templaterunner = (prod, i) => {
-    console.log(prod)
     const target = document.querySelector<HTMLUListElement>('#list');
     const item = `<div class="relative">
                     <figure class="bg-orange-100 rounded-lg mb-4 relative group">
@@ -22,7 +21,8 @@ const templaterunner = (prod, i) => {
             if(i >= 4)  {
                 tempLi.classList.add('hidden', 'lg:block')
             }
-            tempLi.classList.add('lg:flex-shrink-0', 'lg:basis-46', 'lg:max-w-60')
+            tempLi.classList.add('lg:flex-shrink-0', 'lg:basis-46', 'lg:max-w-60');
+            tempLi.setAttribute('tabIndex', '-1');
             if (tempLi) {
                 target?.appendChild(tempLi);
             }
