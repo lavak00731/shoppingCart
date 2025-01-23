@@ -6,16 +6,13 @@ const scrollIntoView = () => {
 }
 const showProd = () => {
     const listElems = document.querySelectorAll('#list li.hidden');
-    let loopContrl = 0;
+
     for (let index = 0; index < listElems.length; index++) {
-        const element = listElems[index];
-        if(loopContrl <= 3) {
-            element.classList.remove('hidden')
-        }    
+        const element = listElems[index]; 
         if(index === 0) {
             element.classList.add('first-list-elem');
         } 
-        loopContrl++;        
+        element.classList.remove('hidden');
     }
     scrollIntoView();
 }
@@ -28,5 +25,10 @@ const addEvents = () => {
             showProd();
         }
     })
+    document.addEventListener("mousemove", function(e){
+        let ele = document.querySelector('#list') as HTMLElement;
+        let distance = ele?.offsetLeft + ele?.offsetWidth - e.pageX;
+        distance < 15 && distance > -15 ? ele.classList.add('more-width') : ele.classList.remove('more-width');
+    });
 }
 export default addEvents

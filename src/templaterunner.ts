@@ -1,5 +1,5 @@
 import starsCreator from "./starsCreator";
-const templaterunner = (prod, i) => {
+const templaterunner = (prod:any, i:number) => {
     const target = document.querySelector<HTMLUListElement>('#list');
     const item = `<div class="relative">
                     <figure class="bg-orange-100 rounded-lg mb-4 relative group">

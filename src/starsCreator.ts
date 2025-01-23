@@ -1,4 +1,4 @@
-const starsCreator = (rating) => {
+const starsCreator = (rating:number) => {
     const roundedRating = Math.round(rating);
     switch (roundedRating) {
         case 1:
