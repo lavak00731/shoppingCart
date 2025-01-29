@@ -20,11 +20,15 @@
 }
 
 @media (min-width: 1024px) {
+    .os-scrollbar-horizontal {
+        padding-right: 128px!important;
+    }
     .os-scrollbar-track {
         background-color: #d9d9d9!important;     
-        height: 3px!important;   
+        height: 3px!important;  
     }
     .os-scrollbar-handle {
+        width: 480px!important;
         background-color: rgb(30, 30, 30)!important;
         height: 3px!important;
         

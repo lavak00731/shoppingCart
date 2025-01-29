@@ -10,14 +10,16 @@
     <title>Product Shop</title>
   </head>
   <body>
-    <main aria-labelledby="prod" class="container mx-auto py-8 px-6 relative lg:py-20 lg:px-32">
-      <h1 id="prod" class="source-serif-4-bold text-[28px] leading-[35px] tracking-tight mb-6 text-center lg:text-left lg:font-black lg:text-[40px] lg:leading-[48px]">Best sellers</h1>
-      <a href="#" class="hidden font-poppins font-[14px] leading-[20px] tracking-wide lg:flex lg:flex-row lg:gap-2 lg:align-middle text-link-color lg:absolute top-24 right-32">
-        Shop All Best Sellers
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-        </svg>        
-      </a>
+    <main aria-labelledby="prod" class="mx-auto py-8 px-6 lg:pl-32 lg:pr-0 lg:pt-20 lg:pb-[100px]">
+      <div class="flex flex-row justify-between items-center mb-6 lg:mb-8 lg:pr-32">
+        <h1 id="prod" class="source-serif-4-bold text-[28px] leading-[35px] tracking-tight text-center lg:text-left lg:font-black lg:text-[40px] lg:leading-[48px]">Best sellers</h1>
+        <a href="#" class="hidden font-poppins font-[14px] leading-[20px] tracking-wide lg:flex lg:flex-row lg:gap-2 lg:align-middle text-link-color py-4 px-8">
+          Shop All Best Sellers
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>        
+        </a>
+      </div>      
       <div id="app"></div>
     </main>    
     <script type="module" src="/src/main.ts"></script>
