@@ -15,7 +15,7 @@ const init =  async () => {
   const prods = [];
   const app = document.querySelector<HTMLElement>('#app');
   if(request.length > 0) {
-    app!.innerHTML = `<div id="gralWrapper" class="wrapper lg:overflow-x-auto lg:w-7/8 lg:mx-auto"><ul id="list" class="mb-6 grid grid-cols-2 md:grid-cols-4 gap-[11px] lg:flex  lg:pb-8"></ul></div>`;
+    app!.innerHTML = `<div id="gralWrapper" class="wrapper lg:overflow-x-auto lg:w-7/8 lg:mx-auto"><ul id="list" class="mb-6 grid grid-cols-2 md:grid-cols-4 gap-x-[11px] gap-y-[12px] lg:flex  lg:pb-8"></ul></div>`;
     request.forEach((prod:any, i:number) => {
       prods.push(templaterunner(prod, i));
     });

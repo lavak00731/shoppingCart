@@ -9,6 +9,8 @@ export default {
       colors: {
         'link-color': '#5C553A',
         'discount-color': '#5C7962',
+        'review-color': '#707070',
+        'cta-color': '#1C1D1D'
       },     
       fontFamily: {        
         bebas: ['Bebas Neue', 'sans-serif'],
